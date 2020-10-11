@@ -15,7 +15,7 @@ const SearchCountry = ({handleChange,text}) => {
             
           />
           <label className="active" htmlFor="search">
-            Search By Name
+            Search By Country's Name
           </label>
         </div>
       </div>

@@ -22,10 +22,14 @@ class App extends Component {
    }
   render(){ 
     const {text,countries} = this.state
-    console.log('TEXT',countries);
+    
     const filteredCountryByName = countries.filter(c =>
       c.name.toLowerCase().startsWith(text)
     );
+
+    const hideDiv = !(text === '')?(
+       <p className='center orange-text darken-5'>Sum of Searched Country which starts with letter <b>{text}</b> is: {filteredCountryByName.length}</p>
+    ):(null)
     
     return (
       <div className="container">
@@ -33,7 +37,7 @@ class App extends Component {
        <SearchCountry  handleChange={this.handleChange}  />
        
 
-        <p className='center orange-text darken-5'>Sum of Searched Country which starts with letter <b>{text}</b> is: {filteredCountryByName.length}</p>
+        {hideDiv}
         
         
        <Countries countries={filteredCountryByName}/>
