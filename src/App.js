@@ -28,8 +28,12 @@ class App extends Component {
     );
 
     const hideDiv = !(text === '')?(
-       <p className='center orange-text darken-5'>Sum of Searched Country which starts with letter <b>{text}</b> is: {filteredCountryByName.length}</p>
-    ):(null)
+      (filteredCountryByName.length > 1)?(
+        <p className='center orange-text darken-5'>{filteredCountryByName.length} Countries which starts with letter <b>{text}</b> </p>
+     ):(
+      <p className='center orange-text darken-5'>{filteredCountryByName.length} Country which starts with letter <b>{text}</b> </p> 
+     )
+   ):(null)
     
     return (
       <div className="container">
@@ -37,7 +41,7 @@ class App extends Component {
        <SearchCountry  handleChange={this.handleChange}  />
        
 
-        {hideDiv}
+       {hideDiv}
         
         
        <Countries countries={filteredCountryByName}/>
