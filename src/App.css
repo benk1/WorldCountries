@@ -71,9 +71,19 @@ input {
 }
 
 p {
-  font-size: 22px;
+  font-size: 16px;
+  font-weight: bolder;
 }
 b {
   color: black;
   font-size: 22px;
+}
+.sortDiv {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sortDiv button {
+  border-radius: 20px;
+  margin-bottom: 20px;
 }

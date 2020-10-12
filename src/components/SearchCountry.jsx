@@ -14,7 +14,7 @@ const SearchCountry = ({handleChange,text}) => {
             className='validate'
             
           />
-          <label className="active" htmlFor="search">
+          <label className="active orange-text" htmlFor="search">
             Search By Country's Name
           </label>
         </div>
