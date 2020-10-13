@@ -117,10 +117,10 @@ class App extends Component {
     return (
       <div className="container">
        <Header countries={countries}/>
+       {hideDiv}
        <SearchCountry  handleChange={this.handleChange}  />
        <SortBy sortByNameAsc={this.sortByNameAsc} sortByNameDesc={this.sortByNameDesc} sortByCapitalAsc={this.sortByCapitalAsc} sortByCapitalDesc={this.sortByCapitalDesc} sortedPopulationAsc={this.sortedPopulationAsc} sortedPopulationDesc={this.sortedPopulationDesc}/>
   
-       {hideDiv}
         
         
        <Countries countries={filteredCountryByName}/>
