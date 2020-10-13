@@ -2,7 +2,7 @@
   "name": "30-days-of-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://benk1.github.io/WorldCountries",
+  "homepage": "https://benk1.github.io/WorldCountries/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
