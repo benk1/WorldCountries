@@ -1,18 +1,23 @@
-import React from 'react'
-const SortBy = ({sortByNameAsc,sortByNameDesc,sortByCapitalAsc,sortByCapitalDesc,sortedPopulationAsc,sortedPopulationDesc}) => {
-  return ( 
-   <div className='sortDiv'>
-          <div>
-          <button className="blue darken-5 waves-effect waves-light btn-large"><i onClick={sortByNameAsc} className="material-icons">arrow_upward</i>NAME<i onClick={sortByNameDesc} className="material-icons">arrow_downward</i></button>
-             </div>
-          <div>
-          <button  className=" blue darken-5 waves-effect waves-light btn-large"><i onClick={sortByCapitalAsc} className="material-icons">arrow_upward</i>CAPITAL<i onClick={sortByCapitalDesc} className="material-icons">arrow_downward</i></button>
-          </div>
-          <div>
-          <button className="blue darken-5 waves-effect waves-light btn-large"><i onClick={sortedPopulationAsc} className="material-icons">arrow_upward</i>POPULATION<i onClick={sortedPopulationDesc} className="material-icons">arrow_downward</i></button>
-          </div>
-        </div>
-  );
+import React, { Component } from 'react';
+import CountryHeader from './CountryHeader';
+class SortBy extends Component {
+
+  columns = [
+    {path: 'name', label: "NAME"},
+    {path: 'capital', label: "CAPITAL"},
+    {path: 'population', label: "POPULATION"}
+  ]
+  
+  render() { 
+    const {sortColumn,onSort} = this.props
+    return ( 
+      <div>
+            <CountryHeader columns={this.columns} sortColumn={sortColumn} onSort={onSort}/>
+           </div>
+     );
+  }
 }
  
+ 
 export default SortBy;
+
