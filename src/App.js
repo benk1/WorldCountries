@@ -10,7 +10,7 @@ import _ from 'lodash'
 import SortBy from './components/SortBy';
 import axios from 'axios'
 
-//const urlAPI =  "https://restcountries.eu/rest/v2/all"
+const urlAPI =  "https://restcountries.eu/rest/v2/all"
 class App extends Component {
   state = {
     text: "",
@@ -19,15 +19,10 @@ class App extends Component {
     sortColumn: {path: 'name',order: 'asc'}
   }
 
-  componentDidMount() {
-    this.fetchCountryData()
-  }
-  fetchCountryData = async () => {
-    const url = 'https://restcountries.eu/rest/v2/all'
+  async componentDidMount() {
+    //this.fetchCountryData()
     try {
-      const {data:countries} = await axios.get(url)
-    
-      //const data = await response.data
+      const {data:countries} = await axios.get(urlAPI)
       this.setState({
         countries,
       })
@@ -36,7 +31,6 @@ class App extends Component {
     }
   }
   
-
   handleSort =(sortColumn) =>{
     this.setState({
       sortColumn

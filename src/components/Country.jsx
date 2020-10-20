@@ -1,12 +1,8 @@
 import React from 'react'
 const Country = ({country}) => {
-  /*const formatLanguage  = languages.length > 1 ? (
-    languages.join(',')
-    ):(languages)*/
+  
     const formatLanguage = country.languages.map((c) => (c.length > 1) ? (c.name):(c.name)).join(',')
     
-    //console.log(country.languages.map(c => c));
-  
   return ( 
    <div className="row ">
     <div className="col s12 m12 l12 ">
