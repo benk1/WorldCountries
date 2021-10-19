@@ -16,7 +16,7 @@ const Country = ({ country }) => {
 				<div className="card white lighten-5">
 					<div className="card-content dark-text darken-2">
 						<div className="countryFlag">
-							<img src={country.flags[0]} alt="country_flag" />
+							<img src={country.flag} alt="country_flag" />
 						</div>
 						<span className="card-title orange-text darken-2 center">
 							{country.name}
