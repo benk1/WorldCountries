@@ -1,10 +1,10 @@
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 /*.photo {
   background-image: url(./images/profile_pic.jpg);
@@ -20,16 +20,16 @@ body {
 }*/
 
 .photo {
-  /*background-image: url(./images/profile_pic.jpg);*/
-  /*display: flex;*/
-  /*align-items: center;*/
-  text-align: center;
-  justify-content: center;
-  color: white;
-  border-radius: 50%;
-  width: 25vh;
-  height: 25vh;
-  margin: 0 auto;
+	/*background-image: url(./images/profile_pic.jpg);*/
+	/*display: flex;*/
+	/*align-items: center;*/
+	text-align: center;
+	justify-content: center;
+	color: white;
+	border-radius: 50%;
+	width: 25vh;
+	height: 25vh;
+	margin: 0 auto;
 }
 
 /*.containerphoto {
@@ -38,59 +38,77 @@ body {
   border-color: red;
 }*/
 .icon {
-  display: flex;
+	display: flex;
 }
 .countryList {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 img {
-  width: 20vh;
-  height: 20vh;
-  border-radius: 0.3rem;
-  box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
+	width: 20vh;
+	height: 20vh;
+	border-radius: 0.3rem;
+	box-shadow: 0 0 0.6rem 0.2rem rgb(241, 225, 225);
 }
-
 
 b {
-  font-size: 16px;
+	font-size: 16px;
 }
 input {
-  color: #ffa500;
-  width: 50%;
-  height: 5rem;
-  margin: 3rem auto;
-  text-indent: 2rem;
-  outline: none;
-  border: 0.2rem solid rgb(250, 246, 246);
-  font-size: 2rem;
-  border-radius: 3rem;
-  background: rgb(250, 246, 246);
+	color: #ffa500;
+	width: 50%;
+	height: 5rem;
+	margin: 3rem auto;
+	text-indent: 2rem;
+	outline: none;
+	border: 0.2rem solid rgb(250, 246, 246);
+	font-size: 2rem;
+	border-radius: 3rem;
+	background: rgb(250, 246, 246);
 }
 
 .controls {
-  width: 100%;
-  text-align: center;
+	width: 100%;
+	text-align: center;
 }
 .header {
-  width: 100%;
+	width: 100%;
 }
 
 p {
-  font-size: 16px;
-  font-weight: bolder;
+	font-size: 16px;
+	font-weight: bolder;
 }
 b {
-  color: black;
-  font-size: 22px;
+	color: black;
+	font-size: 22px;
 }
 .sortDiv {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .sortDiv button {
-  border-radius: 20px;
-  margin-bottom: 20px;
+	border-radius: 20px;
+	margin-bottom: 20px;
+}
+.card:hover {
+	transform: scale(1.05);
+}
+.color {
+	color: blue;
+	font-size: larger;
+}
+.language {
+	color: green;
+	font-size: larger;
+}
+.currency {
+	color: chartreuse;
+	font-size: larger;
+}
+.population {
+	color: brown;
+	font-size: larger;
 }

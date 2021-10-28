@@ -11,7 +11,7 @@ const Country = ({ country }) => {
 		country.currencies && country.currencies.map((c) => c.symbol).join(',');
 
 	return (
-		<div className="row ">
+		<div className="row card ">
 			<div className="col s12 m12 l12 ">
 				<div className="card white lighten-5">
 					<div className="card-content dark-text darken-2">
@@ -21,19 +21,19 @@ const Country = ({ country }) => {
 						<span className="card-title orange-text darken-2 center">
 							{country.name}
 						</span>
-						<p>
+						<p className="color">
 							{' '}
 							<b>Capital</b>: {country.capital}
 						</p>
-						<p>
+						<p className="language">
 							{' '}
 							<b>Languages Spoken</b>: {languages}{' '}
 						</p>
-						<p>
+						<p className="currency">
 							{' '}
 							<b>Currencies</b>: {currencyName} - ({currencySymbol}){' '}
 						</p>
-						<p>
+						<p className="population">
 							{' '}
 							<b>Population</b>: {country.population}{' '}
 						</p>
