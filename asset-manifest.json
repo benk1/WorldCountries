@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/WorldCountries/static/css/main.efa51633.chunk.css",
+    "main.css": "/WorldCountries/static/css/main.0318c601.chunk.css",
     "main.js": "/WorldCountries/static/js/main.d0e6a0c8.chunk.js",
     "main.js.map": "/WorldCountries/static/js/main.d0e6a0c8.chunk.js.map",
     "runtime-main.js": "/WorldCountries/static/js/runtime-main.e16e916d.js",
@@ -8,15 +8,15 @@
     "static/js/2.d0044c79.chunk.js": "/WorldCountries/static/js/2.d0044c79.chunk.js",
     "static/js/2.d0044c79.chunk.js.map": "/WorldCountries/static/js/2.d0044c79.chunk.js.map",
     "index.html": "/WorldCountries/index.html",
-    "precache-manifest.40d8ef5f1651ba3449d3f6234f7a5400.js": "/WorldCountries/precache-manifest.40d8ef5f1651ba3449d3f6234f7a5400.js",
+    "precache-manifest.ffc5d9c5a42b9f4ec9ba5a51b251859c.js": "/WorldCountries/precache-manifest.ffc5d9c5a42b9f4ec9ba5a51b251859c.js",
     "service-worker.js": "/WorldCountries/service-worker.js",
-    "static/css/main.efa51633.chunk.css.map": "/WorldCountries/static/css/main.efa51633.chunk.css.map",
+    "static/css/main.0318c601.chunk.css.map": "/WorldCountries/static/css/main.0318c601.chunk.css.map",
     "static/js/2.d0044c79.chunk.js.LICENSE.txt": "/WorldCountries/static/js/2.d0044c79.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e16e916d.js",
     "static/js/2.d0044c79.chunk.js",
-    "static/css/main.efa51633.chunk.css",
+    "static/css/main.0318c601.chunk.css",
     "static/js/main.d0e6a0c8.chunk.js"
   ]
 }
